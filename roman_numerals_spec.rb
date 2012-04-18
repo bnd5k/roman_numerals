@@ -38,5 +38,19 @@ describe RomanNumeral do
     output.should == "LVI"
   end
   
- 
+  it 'converts 101 to CI' do
+    output = RomanNumeral.convert(101)
+    output.should == "CI"
+  end
+  
+  it 'converts 511 to DXI' do
+    output = RomanNumeral.convert(511)
+    output.should == "DXI"
+  end
+
+  
+  it 'converts 1516 to MDXVI' do
+    output = RomanNumeral.convert(1516)
+    output.should == "MDXVI"
+  end   
 end
