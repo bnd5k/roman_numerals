@@ -2,6 +2,11 @@ require_relative 'roman_numerals'
 
 describe RomanNumeral do
 
+  it 'converts 0 to nulla' do
+    output = RomanNumeral.convert(0)
+    output.should == "nulla"
+  end
+  
   it 'converts 1 to I' do
     output = RomanNumeral.convert(1)
     output.should == "I"
