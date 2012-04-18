@@ -6,32 +6,51 @@ describe RomanNumeral do
     output = RomanNumeral.convert(1)
     output.should == "I"
   end
+  
   it 'converts 2 to II' do
     output = RomanNumeral.convert(2)
     output.should == "II"
   end  
-  it 'converts 4 to IV'
+  
+  it 'converts 4 to IV' do
+    output = RomanNumeral.convert(4)
+    output.should == "IV"
+  end
+  
   it 'converts 5 to V' do
     output = RomanNumeral.convert(5)
     output.should == "V"
   end  
+  
   it 'converts 6 to VI' do
     output = RomanNumeral.convert(6)
     output.should == "VI"
   end
+
+  it 'converts 9 to IX' do
+    output = RomanNumeral.convert(9)
+    output.should == "IX"
+  end  
   
   it 'converts 10 to X' do
     output = RomanNumeral.convert(10)
     output.should == "X"
   end  
+  
   it 'converts 11 to XI' do
     output = RomanNumeral.convert(11)
     output.should == "XI"
   end
+
   it 'converts 16 to XVI' do
     output = RomanNumeral.convert(16)
     output.should == "XVI"
   end
+  
+  it 'converts 19 to XIX' do
+    output = RomanNumeral.convert(19)
+    output.should == "XIX"
+  end  
   
   it 'converts 56 to LVI' do
     output = RomanNumeral.convert(56)
@@ -42,15 +61,35 @@ describe RomanNumeral do
     output = RomanNumeral.convert(101)
     output.should == "CI"
   end
+
+  it 'converts 194 to CXCIV' do
+    output = RomanNumeral.convert(194)
+    output.should == "CXCIV"
+  end
   
+  it 'converts 491 to CDXCI' do
+    output = RomanNumeral.convert(491)
+    output.should == "CDXCI"
+  end
+      
   it 'converts 511 to DXI' do
     output = RomanNumeral.convert(511)
     output.should == "DXI"
   end
 
-  
   it 'converts 1516 to MDXVI' do
     output = RomanNumeral.convert(1516)
     output.should == "MDXVI"
-  end   
+  end  
+  
+  it 'converts 2346 to MMCCCXLVI' do
+    output = RomanNumeral.convert(2346)
+    output.should == "MMCCCXLVI"
+  end 
+
+  it 'converts 4346 to MMMMCCCXLVI' do
+    output = RomanNumeral.convert(4346)
+    output.should == "MMMMCCCXLVI"
+  end 
+  
 end
