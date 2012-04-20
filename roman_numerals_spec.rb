@@ -96,5 +96,49 @@ describe RomanNumeral do
     output = RomanNumeral.convert(4346)
     output.should == "MMMMCCCXLVI"
   end 
+
+end  
+
+describe ArabicNumeral do
+
+  it 'converts I to 1' do
+    output = ArabicNumeral.convert("I")
+    output.should == 1
+  end 
+  
+  it 'converts II to 2' do
+    output = ArabicNumeral.convert("II")
+    output.should == 2
+  end
+  # 
+  # it 'converts III to 3' do
+  #   output = ArabicNumeral.convert("III")
+  #   output.should == 3
+  # end
+  # 
+  # it 'converts IV to 4' do
+  #   output = ArabicNumeral.convert("IV")
+  #   output.should == 4
+  # end  
+  # 
+  it 'converts V to 5' do
+    output = ArabicNumeral.convert("V")
+    output.should == 5
+  end
+  # 
+  # it 'converts VI to 6' do
+  #   output = ArabicNumeral.convert("VI")
+  #   output.should == 6
+  # end
+  # 
+  # it 'converts XI to 11' do
+  #   output = ArabicNumeral.convert("XI")
+  #   output.should == 11
+  # end
+  # 
+  # it 'converts XIV to 14' do
+  #   output = ArabicNumeral.convert("XIV")
+  #   output.should == 14
+  # end
   
 end
