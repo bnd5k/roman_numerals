@@ -32,6 +32,11 @@ describe RomanNumeral do
     output.should == "VI"
   end
 
+  it 'converts 8 to VIII' do
+    output = RomanNumeral.convert(6)
+    output.should == "VIII"
+  end
+  
   it 'converts 9 to IX' do
     output = RomanNumeral.convert(9)
     output.should == "IX"
@@ -110,35 +115,40 @@ describe ArabicNumeral do
     output = ArabicNumeral.convert("II")
     output.should == 2
   end
-  # 
-  # it 'converts III to 3' do
-  #   output = ArabicNumeral.convert("III")
-  #   output.should == 3
-  # end
-  # 
-  # it 'converts IV to 4' do
-  #   output = ArabicNumeral.convert("IV")
-  #   output.should == 4
-  # end  
-  # 
+  
+  it 'converts III to 3' do
+    output = ArabicNumeral.convert("III")
+    output.should == 3
+  end
+  
+  it 'converts IV to 4' do
+    output = ArabicNumeral.convert("IV")
+    output.should == 4
+  end  
+  
   it 'converts V to 5' do
     output = ArabicNumeral.convert("V")
     output.should == 5
   end
-  # 
-  # it 'converts VI to 6' do
-  #   output = ArabicNumeral.convert("VI")
-  #   output.should == 6
-  # end
-  # 
-  # it 'converts XI to 11' do
-  #   output = ArabicNumeral.convert("XI")
-  #   output.should == 11
-  # end
-  # 
-  # it 'converts XIV to 14' do
-  #   output = ArabicNumeral.convert("XIV")
-  #   output.should == 14
-  # end
   
+  it 'converts VI to 6' do
+    output = ArabicNumeral.convert("VI")
+    output.should == 6
+  end
+  
+  it 'converts XI to 11' do
+    output = ArabicNumeral.convert("XI")
+    output.should == 11
+  end
+  
+  it 'converts XIV to 14' do
+    output = ArabicNumeral.convert("XIV")
+    output.should == 14
+  end
+  
+  it 'converts XX to 20' do
+    output = ArabicNumeral.convert("XX")
+    output.should == 20
+  end
+    
 end
