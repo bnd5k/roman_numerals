@@ -17,10 +17,11 @@ class RomanNumeral
 end
 
 class ArabicNumeral
+  def self.convert(letters)
 
-digits = { "I" => 1, "V" => 5, "X" => 10, "L" => 50, "C" => 100, "D" => 500, "M" => 1000 }
+    digits = { "I" => 1, "V" => 5, "X" => 10, "L" => 50, "C" => 100, "D" => 500, "M" => 1000 }
 
-  def conv1(letters)
+  #def conv1(letters)
   	@bump = []    
     my_array = letters.split("") 
     my_array.each_with_index do |let|
@@ -28,9 +29,9 @@ digits = { "I" => 1, "V" => 5, "X" => 10, "L" => 50, "C" => 100, "D" => 500, "M"
   	puts @bump.join('')
     @bump << arabic
     end  
-  end
+  #end
 
-  def addition(letters)
+  #def addition(letters)
     @bump = "II"
     	if  @bump[index-1] < @bump[index-0] 
     #maybe have a method for conversion and a method for addition
@@ -40,11 +41,11 @@ digits = { "I" => 1, "V" => 5, "X" => 10, "L" => 50, "C" => 100, "D" => 500, "M"
     		mp[index-0] = 0      
       end
       #now add that shit up.  
-  end  
+  #end  
 
-  def self.convert(letters)
-    conv1(letters)
-    addition(letters)
+  
+ #   conv1(letters)
+ #   addition(letters)
 
    end
    
