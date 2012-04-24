@@ -52,7 +52,7 @@ describe ArabicNumeral do
  
   digits.each do |arbc, rmn|
     it "converts #{rmn} to  #{arbc}" do
-     output = RomanNumeral.convert(rmn)
+     output = ArabicNumeral.convert(rmn)
      output.should == arbc
     end             
   end        
