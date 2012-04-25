@@ -20,6 +20,7 @@ digits = {
           37 => "XXXVII",
           24 => "XXIV",
           20 => "XX",
+          14 => "XIV",
           10 => "X",
           9 => "IX",
           8 => "VIII",
@@ -40,7 +41,7 @@ describe RomanNumeral do
   end
   
   digits.each do |arbc, rmn|
-    it "converts #{arbc} to  #{rmn}" do
+    it "converts #{arbc} to #{rmn}" do
       output = RomanNumeral.convert(arbc)
       output.should == rmn
     end  
@@ -51,7 +52,7 @@ end
 describe ArabicNumeral do
  
   digits.each do |arbc, rmn|
-    it "converts #{rmn} to  #{arbc}" do
+    it "converts #{rmn} to #{arbc}" do
      output = ArabicNumeral.convert(rmn)
      output.should == arbc
     end             
