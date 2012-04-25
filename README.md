@@ -1,19 +1,7 @@
 ### Roman Numerals
-A simple ruby program to convert arab
+A simple ruby program to convert roman numerals into arabic ones and vise versa.
 
 #### Things I learned
- * I hate ruby
- * This is great
-
-``` ruby
-  a = 'this'
-  b = that
-
-  [1,2,3].each do
-    a + b
-  end
-
-```
-
-
-I had trouble working with the `to_roman` method
+ * Rspec: outside of Rails, writing and refactoring tests
+ * TDD strategies
+ * the joys of the enumerable module (most notably "inject")
